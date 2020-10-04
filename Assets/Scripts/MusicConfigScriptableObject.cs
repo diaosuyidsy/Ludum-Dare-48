@@ -15,4 +15,6 @@ public class MusicConfigScriptableObject : ScriptableObject
 
     public float ClickDuration = 0.1f;
     public float TrackLength = 18f;
+
+    public float MinDistanceSnap = 2f;
 }

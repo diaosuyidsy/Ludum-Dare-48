@@ -11,7 +11,7 @@ public class MoveableComponent : MonoBehaviour
     public MusicConfigScriptableObject MusicData;
     private bool _dragging;
     private float _timer;
-    private bool _inStore;
+    public bool InStore;
     private Vector3 _spriteInitialScale;
 
     private void Awake()
@@ -54,17 +54,26 @@ public class MoveableComponent : MonoBehaviour
         SpriteBody.GetComponent<SpriteRenderer>().DOFade (1f, 0f);
         if (_timer < Time.timeSinceLevelLoad)
         {
-            if(_inStore)
+            if(InStore)
             {
-                _inStore = false;
                 Storage.OnTakeOut (gameObject);
+                InStore = false;
             }
-            MoveableLocations.OnDrop (transform);
+            else
+                MoveableLocations.OnDrop (transform);
         }
         else
         {
-            Storage.OnStore (gameObject);
-            _inStore = true;
+            if (InStore)
+            {
+                Storage.OnTakeOut (gameObject);
+                InStore = false;
+            }else
+            {
+                MoveableLocations.CurrentOccupants[MoveableLocations.GetCurrentIndex (gameObject)] = null;
+                Storage.OnStore (gameObject);
+                InStore = true;
+            }
         }
     }
 

@@ -9,6 +9,7 @@ public class RunningComponent : MonoBehaviour
     public Animator Animator;
     public MoveableLocationsComponent MoveableLocations;
     public AnimalType Type;
+    public SpriteRenderer SpriteRenderer;
 
     private FSM<RunningComponent> _runningFSM;
     private Transform _nextLocation;
@@ -41,6 +42,11 @@ public class RunningComponent : MonoBehaviour
         _runningFSM.Update ();
     }
 
+    private void LateUpdate()
+    {
+        SpriteRenderer.sortingOrder = (int)(transform.position.y * -10);
+    }
+
     private void OnEnable()
     {
         _runningFSM.TransitionTo<NormalRunState> ();
@@ -49,7 +55,8 @@ public class RunningComponent : MonoBehaviour
     private void OnDisable()
     {
         _runningFSM.TransitionTo<QuietState> ();
-        transform.position = MoveableLocations.LocationTransforms[MoveableLocations.GetCurrentIndex (gameObject)].position;
+        if(!GetComponent<MoveableComponent>().InStore)
+            transform.position = MoveableLocations.LocationTransforms[MoveableLocations.GetCurrentIndex (gameObject)].position;
     }
 
     private abstract class RunningState : FSM<RunningComponent>.State

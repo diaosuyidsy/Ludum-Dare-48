@@ -9,6 +9,7 @@ public class MoveableLocationsComponent : MonoBehaviour
     /// </summary>
     public Transform[] LocationTransforms;
     public GameObject[] CurrentOccupants;
+    public MusicConfigScriptableObject MusicData;
 
     public int GetCurrentIndex(GameObject target)
     {
@@ -20,8 +21,8 @@ public class MoveableLocationsComponent : MonoBehaviour
             }
         }
 
-        Debug.Assert (false, "Did not find gameobject: " + target.name + " in: " + gameObject.name);
-        return 0;
+        //Debug.Assert (false, "Did not find gameobject: " + target.name + " in: " + gameObject.name);
+        return -1;
     }
 
     public int GetNearestPreviousOccupants(int thisIndex)
@@ -34,10 +35,24 @@ public class MoveableLocationsComponent : MonoBehaviour
         return thisIndex;
     }
 
+    public void DropToEmpty(Transform target)
+    {
+        for(int i =0; i < CurrentOccupants.Length; i++)
+        {
+            if(CurrentOccupants[i] == null)
+            {
+                CurrentOccupants[i] = target.gameObject;
+                target.position = LocationTransforms[i].position;
+                return;
+            }
+        }
+    }
+
     public void OnDrop(Transform target)
     {
         int index = GetCurrentIndex (target.gameObject);
-        CurrentOccupants[index] = null;
+        if(index != -1)
+            CurrentOccupants[index] = null;
         int minIndex = index;
         float minDistance = Mathf.Infinity;
         for (int i = 0; i < LocationTransforms.Length; i++)
@@ -76,6 +91,7 @@ public class MoveableLocationsComponent : MonoBehaviour
                 }
             }
         }
+        if (minDistance == -1) return;
         target.position = LocationTransforms[minIndex].position;
         GameObject swapCache = null;
         // Swap if current position has occupants

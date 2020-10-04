@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class GameManagerComponent : MonoBehaviour
 {
-    public RunningComponent[] AllAnimals;
+    private RunningComponent[] AllAnimals;
     public BeatComponent BeatController;
     private MoveableComponent[] AllMoveables;
 
     private void Awake()
     {
         AllMoveables = Resources.FindObjectsOfTypeAll<MoveableComponent> ();
+        AllAnimals = Resources.FindObjectsOfTypeAll<RunningComponent> ();
     }
 
     public void OnStart () 

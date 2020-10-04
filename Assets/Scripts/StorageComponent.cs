@@ -7,6 +7,8 @@ public class StorageComponent : MonoBehaviour
     public GameObject[] CurrentStorage;
     private Transform[] StorageLocations;
 
+    public MoveableLocationsComponent MoveableLocations;
+
     private void Awake()
     {
         StorageLocations = new Transform[transform.childCount];
@@ -45,5 +47,7 @@ public class StorageComponent : MonoBehaviour
                 CurrentStorage[i] = null;
             }
         }
+        // Move to a random empty place in the moveable locations
+        MoveableLocations.DropToEmpty (target.transform);
     }
 }

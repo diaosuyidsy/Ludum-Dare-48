@@ -177,6 +177,7 @@ MonoBehaviour:
   MoveableLocations: {fileID: 0}
   Storage: {fileID: 0}
   MusicData: {fileID: 11400000, guid: 249ce362611da1148b212b7053109fe1, type: 2}
+  InStore: 0
 --- !u!114 &6523354840877269538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,3 +193,5 @@ MonoBehaviour:
   MusicData: {fileID: 11400000, guid: 249ce362611da1148b212b7053109fe1, type: 2}
   Animator: {fileID: 8502926352529731878}
   MoveableLocations: {fileID: 0}
+  Type: 0
+  SpriteRenderer: {fileID: 8447039002272996069}

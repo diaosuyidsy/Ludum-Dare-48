@@ -62,6 +62,7 @@ public class BeatComponent : MonoBehaviour
         {
             GameObject animal = AnimalLocations.CurrentOccupants[i];
             if (animal == null) continue;
+            if (animal.GetComponent<MoveableComponent> ().InStore) continue;
             animal.GetComponent<RunningComponent> ().OnUpdateSegment (ObstacleLocations.LocationTransforms[i * MusicData.OneTrackSegmentCount + CurrentSegmentIndex], teleport);
             GameObject obstacle = ObstaclesPerTrack[i][CurrentSegmentIndex];
             if (obstacle != null)
