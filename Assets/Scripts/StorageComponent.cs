@@ -38,7 +38,7 @@ public class StorageComponent : MonoBehaviour
         }
     }
 
-    public void OnTakeOut(GameObject target)
+    public void OnTakeOut(GameObject target, bool nearby = false)
     {
         for(int i = 0; i < CurrentStorage.Length; i++)
         {
@@ -48,6 +48,6 @@ public class StorageComponent : MonoBehaviour
             }
         }
         // Move to a random empty place in the moveable locations
-        MoveableLocations.DropToEmpty (target.transform);
+        MoveableLocations.DropToEmpty (target.transform, nearby);
     }
 }

@@ -35,17 +35,30 @@ public class MoveableLocationsComponent : MonoBehaviour
         return thisIndex;
     }
 
-    public void DropToEmpty(Transform target)
+    public void DropToEmpty(Transform target, bool nearby = false)
     {
-        for(int i =0; i < CurrentOccupants.Length; i++)
+        int minIndex = -1;
+        float minDistance = Mathf.Infinity;
+        for(int i = 0; i < CurrentOccupants.Length; i++)
         {
             if(CurrentOccupants[i] == null)
             {
-                CurrentOccupants[i] = target.gameObject;
-                target.position = LocationTransforms[i].position;
-                return;
+                if(!nearby)
+                {
+                    CurrentOccupants[i] = target.gameObject;
+                    target.position = LocationTransforms[i].position;
+                    return;
+                }
+                if(Vector2.Distance(LocationTransforms[i].position, target.position) < minDistance)
+                {
+                    minIndex = i;
+                    minDistance = Vector2.Distance (LocationTransforms[i].position, target.position);
+                }
             }
         }
+        if (minIndex == -1) return;
+        CurrentOccupants[minIndex] = target.gameObject;
+        target.position = LocationTransforms[minIndex].position;
     }
 
     public void OnDrop(Transform target)

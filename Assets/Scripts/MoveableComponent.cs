@@ -56,7 +56,7 @@ public class MoveableComponent : MonoBehaviour
         {
             if(InStore)
             {
-                Storage.OnTakeOut (gameObject);
+                Storage.OnTakeOut (gameObject, true);
                 InStore = false;
             }
             else
