@@ -9,5 +9,16 @@ public static class Utility
 
 public enum ObstacleType
 {
-    ThreeJump   
+    run,
+    jump,
+    crawl,
+    fly,
+    climb,
+    roll,
+    slide,
+    longJump,
+    trippleJump,
+    upsideDown,
+    highJump,
+    hurdle
 }

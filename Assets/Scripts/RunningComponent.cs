@@ -20,13 +20,6 @@ public class RunningComponent : MonoBehaviour
     {
         print (name + " Encountered: " + type);
         Animator.SetTrigger (type.ToString ());
-//        _runningFSM.TransitionTo<ObstacleState> ();
-    }
-
-    public void OnNormalRun()
-    {
-        if(!_runningFSM.CurrentState.GetType().Equals(typeof(NormalRunState)))
-            _runningFSM.TransitionTo<NormalRunState> ();
     }
 
     public void OnUpdateSegment(Transform nextLocation, bool teleport = false)
@@ -53,6 +46,7 @@ public class RunningComponent : MonoBehaviour
     private void OnDisable()
     {
         _runningFSM.TransitionTo<QuietState> ();
+        transform.position = MoveableLocations.LocationTransforms[MoveableLocations.GetCurrentIndex (gameObject)].position;
     }
 
     private abstract class RunningState : FSM<RunningComponent>.State
