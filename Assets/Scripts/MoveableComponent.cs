@@ -39,6 +39,7 @@ public class MoveableComponent : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (!enabled) return;
         _dragging = true;
         _timer = Time.timeSinceLevelLoad + MusicData.ClickDuration;
         SpriteBody.localScale = 3f * _spriteInitialScale;
@@ -47,6 +48,7 @@ public class MoveableComponent : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (!enabled) return;
         _dragging = false;
         SpriteBody.localScale = _spriteInitialScale;
         SpriteBody.GetComponent<SpriteRenderer>().DOFade (1f, 0f);

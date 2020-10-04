@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class RunningComponent : MonoBehaviour
 {
     public MusicConfigScriptableObject MusicData;
     public Animator Animator;
     public MoveableLocationsComponent MoveableLocations;
+    public AnimalType Type;
 
     private FSM<RunningComponent> _runningFSM;
     private Transform _nextLocation;
@@ -20,6 +22,7 @@ public class RunningComponent : MonoBehaviour
     {
         print (name + " Encountered: " + type);
         Animator.SetTrigger (type.ToString ());
+        RuntimeManager.PlayOneShot ("event:/" + Type.ToString () + "/" + type.ToString ());
     }
 
     public void OnUpdateSegment(Transform nextLocation, bool teleport = false)

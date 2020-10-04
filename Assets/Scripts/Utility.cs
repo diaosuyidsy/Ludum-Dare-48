@@ -22,3 +22,11 @@ public enum ObstacleType
     highJump,
     hurdle
 }
+
+public enum AnimalType
+{
+    Bunny,
+    Turtle,
+    Dog,
+    Hamster
+}
