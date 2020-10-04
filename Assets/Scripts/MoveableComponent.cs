@@ -7,7 +7,20 @@ public class MoveableComponent : MonoBehaviour
 {
     public Transform SpriteBody;
     public MoveableLocationsComponent MoveableLocations;
+    public StorageComponent Storage;
+    public MusicConfigScriptableObject MusicData;
     private bool _dragging;
+    private float _timer;
+    private bool _inStore;
+    private Vector3 _spriteInitialScale;
+
+    private void Awake()
+    {
+        _spriteInitialScale = new Vector3 (
+            SpriteBody.localScale.x,
+            SpriteBody.localScale.y,
+            SpriteBody.localScale.z);
+    }
 
     private void OnEnable()
     {
@@ -27,16 +40,30 @@ public class MoveableComponent : MonoBehaviour
     private void OnMouseDown()
     {
         _dragging = true;
-        SpriteBody.localScale = 3f * Vector3.one;
+        _timer = Time.timeSinceLevelLoad + MusicData.ClickDuration;
+        SpriteBody.localScale = 3f * _spriteInitialScale;
         SpriteBody.GetComponent<SpriteRenderer>().DOFade(0.5f, 0f);
     }
 
     private void OnMouseUp()
     {
         _dragging = false;
-        SpriteBody.localScale = Vector3.one;
+        SpriteBody.localScale = _spriteInitialScale;
         SpriteBody.GetComponent<SpriteRenderer>().DOFade (1f, 0f);
-        MoveableLocations.OnDrop (transform);
+        if (_timer < Time.timeSinceLevelLoad)
+        {
+            if(_inStore)
+            {
+                _inStore = false;
+                Storage.OnTakeOut (gameObject);
+            }
+            MoveableLocations.OnDrop (transform);
+        }
+        else
+        {
+            Storage.OnStore (gameObject);
+            _inStore = true;
+        }
     }
 
     private void OnDisable()

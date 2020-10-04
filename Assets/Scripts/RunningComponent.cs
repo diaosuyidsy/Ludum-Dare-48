@@ -20,7 +20,7 @@ public class RunningComponent : MonoBehaviour
     {
         print (name + " Encountered: " + type);
         Animator.SetTrigger (type.ToString ());
-        _runningFSM.TransitionTo<ObstacleState> ();
+//        _runningFSM.TransitionTo<ObstacleState> ();
     }
 
     public void OnNormalRun()
@@ -29,9 +29,15 @@ public class RunningComponent : MonoBehaviour
             _runningFSM.TransitionTo<NormalRunState> ();
     }
 
-    public void OnUpdateSegment(Transform nextLocation)
+    public void OnUpdateSegment(Transform nextLocation, bool teleport = false)
     {
         _nextLocation = nextLocation;
+        if(teleport)
+        {
+            Vector3 curPos = transform.position;
+            curPos.x = MoveableLocations.LocationTransforms[MoveableLocations.GetCurrentIndex (gameObject)].position.x;
+            transform.position = curPos;
+        }
     }
 
     private void Update()
@@ -61,14 +67,19 @@ public class RunningComponent : MonoBehaviour
         {
             base.Update ();
             if (Context._nextLocation == null) return;
-            float step = 2f * Time.deltaTime;
+            float step = Context.MusicData.TrackLength / (Context.MusicData.OneBeatDuration * Context.MusicData.BeatCount) * Time.deltaTime;
             Context.transform.position = Vector3.MoveTowards (Context.transform.position, Context._nextLocation.position, step);
         }
     }
 
     private class ObstacleState : RunningState
     {
-
+        public override void OnExit ()
+        {
+            base.OnExit ();
+            Context.transform.position = Context._nextLocation.position;
+            Context.GetComponent<MoveableComponent> ().SpriteBody.localPosition = Vector3.zero;
+        }
     }
 
 

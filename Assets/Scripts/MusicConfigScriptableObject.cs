@@ -12,4 +12,7 @@ public class MusicConfigScriptableObject : ScriptableObject
 
     public float GetSegmentDuration => OneBeatDuration / SegmentCount;
     public int OneTrackSegmentCount => BeatCount * SegmentCount;
+
+    public float ClickDuration = 0.1f;
+    public float TrackLength = 18f;
 }

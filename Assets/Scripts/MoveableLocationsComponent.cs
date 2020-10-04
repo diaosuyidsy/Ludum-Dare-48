@@ -24,6 +24,16 @@ public class MoveableLocationsComponent : MonoBehaviour
         return 0;
     }
 
+    public int GetNearestPreviousOccupants(int thisIndex)
+    {
+        thisIndex--;
+        while(thisIndex >= 0 && CurrentOccupants[thisIndex] == null)
+        {
+            thisIndex--;
+        }
+        return thisIndex;
+    }
+
     public void OnDrop(Transform target)
     {
         int index = GetCurrentIndex (target.gameObject);
@@ -38,6 +48,32 @@ public class MoveableLocationsComponent : MonoBehaviour
             {
                 minDistance = dist;
                 minIndex = i;
+            }
+        }
+        // Before putting it in place, check to see if it's obstacle and being blocked by other obstacles
+        ObstacleComponent obs = target.GetComponent<ObstacleComponent> ();
+        if(obs != null)
+        {
+            if(minIndex != index)
+            {
+                // Check Previous Obstacles to see blocking
+                int lastObstacle = GetNearestPreviousOccupants (minIndex);
+                if(lastObstacle != -1)
+                {
+                    if(CurrentOccupants[lastObstacle].GetComponent<ObstacleComponent>().ObstacleLength > Mathf.Abs(minIndex - lastObstacle))
+                    {
+                        minIndex = index;
+                    }
+                }
+                // Check Behind Obstacles to see blocking
+                for(int i = 0; i < obs.ObstacleLength; i++)
+                {
+                    if(CurrentOccupants[minIndex + i] != null)
+                    {
+                        minIndex = index;
+                        break;
+                    }
+                }
             }
         }
         target.position = LocationTransforms[minIndex].position;

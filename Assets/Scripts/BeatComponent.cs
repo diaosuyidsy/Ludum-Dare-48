@@ -44,11 +44,11 @@ public class BeatComponent : MonoBehaviour
         if(_timer < Time.timeSinceLevelLoad)
         {
             _timer = Time.timeSinceLevelLoad + MusicData.GetSegmentDuration;
-            _updateSegment ((CurrentSegmentIndex + 1) % MusicData.OneTrackSegmentCount);
+            _updateSegment ((CurrentSegmentIndex + 1) % MusicData.OneTrackSegmentCount, (CurrentSegmentIndex + 1) % MusicData.OneTrackSegmentCount == 0);
         }
     }
 
-    private void _updateSegment(int newSegment)
+    private void _updateSegment(int newSegment, bool teleport = false)
     {
         CurrentSegmentIndex = newSegment;
         // Loop through track and see what each animal should perform
@@ -56,7 +56,7 @@ public class BeatComponent : MonoBehaviour
         {
             GameObject animal = AnimalLocations.CurrentOccupants[i];
             if (animal == null) continue;
-            animal.GetComponent<RunningComponent> ().OnUpdateSegment (ObstacleLocations.LocationTransforms[(i + 1) * CurrentSegmentIndex]);
+            animal.GetComponent<RunningComponent> ().OnUpdateSegment (ObstacleLocations.LocationTransforms[(i + 1) * CurrentSegmentIndex], teleport);
             GameObject obstacle = ObstaclesPerTrack[i][CurrentSegmentIndex];
             if (obstacle == null)
                 animal.GetComponent<RunningComponent> ().OnNormalRun ();
