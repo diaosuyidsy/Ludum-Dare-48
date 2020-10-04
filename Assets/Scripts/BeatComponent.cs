@@ -11,22 +11,27 @@ public class BeatComponent : MonoBehaviour
     public int CurrentSegmentIndex;
 
     private float _timer;
-    private void Awake ()
+
+    private void Awake()
     {
-        // Initialize TrackLocations
         ObstaclesPerTrack = new GameObject[MusicData.TrackCount][];
-        for(int i = 0; i < MusicData.TrackCount; i++)
+        for (int i = 0; i < MusicData.TrackCount; i++)
         {
             ObstaclesPerTrack[i] = new GameObject[MusicData.OneTrackSegmentCount];
         }
+    }
+
+    private void _initObstacles()
+    {
+        // Initialize ObstaclesPerTrack
         int j = 0;
         for (int i = 0; i < ObstacleLocations.CurrentOccupants.Length; i++)
         {
-            if(i / MusicData.OneTrackSegmentCount == j)
+            if (i / MusicData.OneTrackSegmentCount == j)
             {
-                ObstaclesPerTrack[j][i % MusicData.OneTrackSegmentCount] = ObstacleLocations.CurrentOccupants[i].gameObject;
+                ObstaclesPerTrack[j][i % MusicData.OneTrackSegmentCount] = ObstacleLocations.CurrentOccupants[i];
             }
-            if(i % MusicData.OneTrackSegmentCount == 0 && i != 0)
+            if (i % MusicData.OneTrackSegmentCount == 0 && i != 0)
             {
                 j++;
             }
@@ -35,6 +40,7 @@ public class BeatComponent : MonoBehaviour
 
     private void OnEnable()
     {
+        _initObstacles ();
         _updateSegment (0);
         _timer = Time.timeSinceLevelLoad + MusicData.GetSegmentDuration;
     }
@@ -56,17 +62,15 @@ public class BeatComponent : MonoBehaviour
         {
             GameObject animal = AnimalLocations.CurrentOccupants[i];
             if (animal == null) continue;
-            animal.GetComponent<RunningComponent> ().OnUpdateSegment (ObstacleLocations.LocationTransforms[(i + 1) * CurrentSegmentIndex], teleport);
+            animal.GetComponent<RunningComponent> ().OnUpdateSegment (ObstacleLocations.LocationTransforms[i * MusicData.OneTrackSegmentCount + CurrentSegmentIndex], teleport);
             GameObject obstacle = ObstaclesPerTrack[i][CurrentSegmentIndex];
-            if (obstacle == null)
-                animal.GetComponent<RunningComponent> ().OnNormalRun ();
-            else
+            if (obstacle != null)
                 animal.GetComponent<RunningComponent> ().OnEncounterObstacles (obstacle.GetComponent<ObstacleComponent> ().Type);
         }
     }
 
     private void OnDisable()
     {
-
+        CurrentSegmentIndex = 0;
     }
 }
