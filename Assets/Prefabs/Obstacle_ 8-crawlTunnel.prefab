@@ -115,17 +115,17 @@ PrefabInstance:
     - target: {fileID: 7628394060784177660, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle_ 8-crawlTunnel
+      value: Obstacle_ 8-crawlTunnel (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.232
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.245
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
@@ -175,12 +175,22 @@ PrefabInstance:
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.063
       objectReference: {fileID: 0}
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.54
+      value: -2.1468
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.37826467
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33259276
       objectReference: {fileID: 0}
     - target: {fileID: 7628394061536743377, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
