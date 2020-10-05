@@ -70,7 +70,8 @@ public class MoveableComponent : MonoBehaviour
                 InStore = false;
             }else
             {
-                MoveableLocations.CurrentOccupants[MoveableLocations.GetCurrentIndex (gameObject)] = null;
+                if(MoveableLocations.GetCurrentIndex(gameObject) != -1)
+                    MoveableLocations.CurrentOccupants[MoveableLocations.GetCurrentIndex (gameObject)] = null;
                 Storage.OnStore (gameObject);
                 InStore = true;
             }

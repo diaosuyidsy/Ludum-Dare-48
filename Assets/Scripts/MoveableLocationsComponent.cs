@@ -96,7 +96,7 @@ public class MoveableLocationsComponent : MonoBehaviour
                 // Check Behind Obstacles to see blocking
                 for(int i = 0; i < obs.ObstacleLength; i++)
                 {
-                    if(CurrentOccupants[minIndex + i] != null)
+                    if(minIndex + i >= CurrentOccupants.Length || CurrentOccupants[minIndex + i] != null)
                     {
                         minIndex = index;
                         break;
@@ -104,7 +104,8 @@ public class MoveableLocationsComponent : MonoBehaviour
                 }
             }
         }
-        if (minDistance == -1) return;
+        if (minIndex == -1)
+            minIndex = index;
         target.position = LocationTransforms[minIndex].position;
         GameObject swapCache = null;
         // Swap if current position has occupants
