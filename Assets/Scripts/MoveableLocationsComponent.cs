@@ -104,8 +104,9 @@ public class MoveableLocationsComponent : MonoBehaviour
                 }
             }
         }
-        if (minIndex == -1)
+        if (minIndex == -1 && index != -1)
             minIndex = index;
+        else return;
         target.position = LocationTransforms[minIndex].position;
         GameObject swapCache = null;
         // Swap if current position has occupants
