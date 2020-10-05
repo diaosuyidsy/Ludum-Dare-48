@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{7c439e0a-c278-4f9c-9835-3cb7568054ef}">
+		<property name="assetPath">
+			<value>red guitar_0.5s_v2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4800907029478458</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a2f1bb0a-254c-456d-b440-e58067c0fd76}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -15,10 +15,26 @@ PrefabInstance:
       propertyPath: ObstacleLength
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.55344313
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6365465
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.03469813
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
+      propertyPath: m_Size.y
+      value: 0.93060374
+      objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177660, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle_ 2-run (1)
+      value: Obstacle_ 2-run
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{548930b9-9406-4d64-8577-6093fd8d86c4}">
+		<property name="assetPath">
+			<value>red bass_2s_v2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.1818140589569159</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a2f1bb0a-254c-456d-b440-e58067c0fd76}</destination>
+		</relationship>
+	</object>
+</objects>

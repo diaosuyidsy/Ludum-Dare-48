@@ -19,9 +19,9 @@ public class GameManagerComponent : MonoBehaviour
 
     public void OnStart () 
     {
-//        BGMEV = RuntimeManager.CreateInstance ("event:/BGM");
-//        BGMEV.start ();
-//        BGMEV.setVolume (_isMuted ? 1f : 0f);
+        BGMEV = RuntimeManager.CreateInstance ("event:/BGM");
+        BGMEV.start ();
+        BGMEV.setVolume (_isMuted ? 0f : 1f);
         for (int i = 0; i < AllAnimals.Length; i++)
         {
             AllAnimals[i].enabled = true;
@@ -35,7 +35,7 @@ public class GameManagerComponent : MonoBehaviour
 
     public void OnReset()
     {
-//        BGMEV.stop (FMOD.Studio.STOP_MODE.IMMEDIATE);
+        BGMEV.stop (FMOD.Studio.STOP_MODE.IMMEDIATE);
         for (int i = 0; i < AllAnimals.Length; i++)
         {
             AllAnimals[i].enabled = false;
@@ -49,7 +49,7 @@ public class GameManagerComponent : MonoBehaviour
 
     public void ToggleBGM(bool isOn)
     {
-        _isMuted = isOn;
-        BGMEV.setVolume (_isMuted ? 1f : 0f);
+        _isMuted = !isOn;
+        BGMEV.setVolume (_isMuted ? 0f : 1f);
     }
 }

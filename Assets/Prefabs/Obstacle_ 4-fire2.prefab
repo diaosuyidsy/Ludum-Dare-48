@@ -98,24 +98,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Offset.y
-      value: 0.9463787
+      value: 0.43133664
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Size.y
-      value: 2.8927574
+      value: 1.8626733
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Offset.x
-      value: 0.13880247
+      value: -0.12843621
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Size.x
-      value: 2.7413373
+      value: 2.2068598
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177660, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle_ 4-fire2 (1)
+      value: Obstacle_ 4-fire2
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
@@ -175,12 +175,12 @@ PrefabInstance:
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.01
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}

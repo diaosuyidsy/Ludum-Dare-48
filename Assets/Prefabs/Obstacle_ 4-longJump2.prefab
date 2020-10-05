@@ -25,16 +25,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Offset.x
-      value: 0.0053333044
+      value: -1.0022938
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Size.x
-      value: 3.357291
+      value: 2.8341002
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177660, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle_ 4-longJump2 (2)
+      value: Obstacle_ 4-longJump2
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
@@ -99,7 +99,7 @@ PrefabInstance:
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}

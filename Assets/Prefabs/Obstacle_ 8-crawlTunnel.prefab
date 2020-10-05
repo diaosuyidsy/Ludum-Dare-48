@@ -98,24 +98,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Offset.y
-      value: 0.45326412
+      value: 0.10980213
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Size.y
-      value: 1.9065282
+      value: 1.2196043
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Offset.x
-      value: 0.010303259
+      value: -2.162623
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Size.x
-      value: 6.294953
+      value: 4.6967974
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177660, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle_ 8-crawlTunnel (1)
+      value: Obstacle_ 8-crawlTunnel
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}

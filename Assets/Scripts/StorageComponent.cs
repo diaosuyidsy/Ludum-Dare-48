@@ -12,10 +12,13 @@ public class StorageComponent : MonoBehaviour
     private void Awake()
     {
         StorageLocations = new Transform[transform.childCount];
-        CurrentStorage = new GameObject[transform.childCount];
+        if(CurrentStorage.Length == 0)
+            CurrentStorage = new GameObject[transform.childCount];
         for (int i = 0; i < transform.childCount; i++)
         {
             StorageLocations[i] = transform.GetChild (i);
+            if (CurrentStorage[i] != null)
+                CurrentStorage[i].transform.position = StorageLocations[i].position;
         }
     }
 

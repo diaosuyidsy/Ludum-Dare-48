@@ -13,16 +13,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Offset.y
-      value: 1.0595233
+      value: 0.45472527
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Size.y
-      value: 3.1190467
+      value: 1.9094505
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177660, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle_8-zipline 1 (1)
+      value: Obstacle_8-zipline 1
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}

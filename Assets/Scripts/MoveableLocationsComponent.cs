@@ -35,6 +35,27 @@ public class MoveableLocationsComponent : MonoBehaviour
         return thisIndex;
     }
 
+    private bool _obstacleCanBePlacedHere(ObstacleComponent obstacle, int index)
+    {
+        if (obstacle == null) return true;
+        // Check to see if currentoccupants[i] can be occupied
+        // Check Previous Obstacle
+        int previousObs = GetNearestPreviousOccupants (index);
+        if (previousObs == -1 ||
+            CurrentOccupants[previousObs].GetComponent<ObstacleComponent> ().ObstacleLength > Mathf.Abs (index - previousObs))
+            return false;
+        // Then Check Behind Obstacle
+        int obsLenght = obstacle.ObstacleLength;
+        for (int i = 0; i < obsLenght; i++)
+        {
+            if (index + i >= CurrentOccupants.Length || CurrentOccupants[index + i] != null)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public void DropToEmpty(Transform target, bool nearby = false)
     {
         int minIndex = -1;
@@ -45,14 +66,21 @@ public class MoveableLocationsComponent : MonoBehaviour
             {
                 if(!nearby)
                 {
+                    // if target is an obstacle then check to see blocking
+                    if (!_obstacleCanBePlacedHere (target.GetComponent<ObstacleComponent> (), i))
+                        continue;
+
                     CurrentOccupants[i] = target.gameObject;
                     target.position = LocationTransforms[i].position;
                     return;
-                }
-                if(Vector2.Distance(LocationTransforms[i].position, target.position) < minDistance)
+                }else
                 {
-                    minIndex = i;
-                    minDistance = Vector2.Distance (LocationTransforms[i].position, target.position);
+                    if (Vector2.Distance (LocationTransforms[i].position, target.position) < minDistance 
+                        && _obstacleCanBePlacedHere(target.GetComponent<ObstacleComponent>(), i))
+                    {
+                        minIndex = i;
+                        minDistance = Vector2.Distance (LocationTransforms[i].position, target.position);
+                    }
                 }
             }
         }
@@ -106,7 +134,6 @@ public class MoveableLocationsComponent : MonoBehaviour
         }
         if (minIndex == -1 && index != -1)
             minIndex = index;
-        else return;
         target.position = LocationTransforms[minIndex].position;
         GameObject swapCache = null;
         // Swap if current position has occupants

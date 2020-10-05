@@ -17,24 +17,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Offset.y
-      value: 0.18132997
+      value: -0.038675666
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Size.y
-      value: 1.3626599
+      value: 0.92264867
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Offset.x
-      value: -0.026665986
+      value: -0.98460734
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Size.x
-      value: 3.3999577
+      value: 2.8224418
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177660, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle_ 4-longJump1 (1)
+      value: Obstacle_ 4-longJump1
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
@@ -99,7 +99,7 @@ PrefabInstance:
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}

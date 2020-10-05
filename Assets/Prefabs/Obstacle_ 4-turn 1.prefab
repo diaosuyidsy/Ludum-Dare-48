@@ -17,16 +17,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: -0.8329356
       objectReference: {fileID: 0}
     - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: m_Size.x
-      value: 3.263071
+      value: 2.5820546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06488633
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869494558, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
+      propertyPath: m_Size.y
+      value: 0.87022734
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177660, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle_ 4-turn 1 (1)
+      value: Obstacle_ 4-turn 1
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
