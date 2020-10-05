@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class GameManagerComponent : MonoBehaviour
 {
     private RunningComponent[] AllAnimals;
     public BeatComponent BeatController;
     private MoveableComponent[] AllMoveables;
+    private FMOD.Studio.EventInstance BGMEV;
+    private bool _isMuted;
 
     private void Awake()
     {
@@ -16,6 +19,9 @@ public class GameManagerComponent : MonoBehaviour
 
     public void OnStart () 
     {
+        BGMEV = RuntimeManager.CreateInstance ("event:/BGM");
+        BGMEV.start ();
+        BGMEV.setVolume (_isMuted ? 1f : 0f);
         for (int i = 0; i < AllAnimals.Length; i++)
         {
             AllAnimals[i].enabled = true;
@@ -29,6 +35,7 @@ public class GameManagerComponent : MonoBehaviour
 
     public void OnReset()
     {
+        BGMEV.stop (FMOD.Studio.STOP_MODE.IMMEDIATE);
         for (int i = 0; i < AllAnimals.Length; i++)
         {
             AllAnimals[i].enabled = false;
@@ -38,5 +45,11 @@ public class GameManagerComponent : MonoBehaviour
             AllMoveables[i].enabled = true;
         }
         BeatController.enabled = false;
+    }
+
+    public void ToggleBGM(bool isOn)
+    {
+        _isMuted = isOn;
+        BGMEV.setVolume (_isMuted ? 1f : 0f);
     }
 }
