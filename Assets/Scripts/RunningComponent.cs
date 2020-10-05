@@ -19,11 +19,11 @@ public class RunningComponent : MonoBehaviour
         _runningFSM = new FSM<RunningComponent> (this);
     }
 
-    public void OnEncounterObstacles(ObstacleType type)
+    public void OnEncounterObstacles(ObstacleComponent obstacle)
     {
-        print (name + " Encountered: " + type);
-        Animator.SetTrigger (type.ToString ());
-        RuntimeManager.PlayOneShot ("event:/" + Type.ToString () + "/" + type.ToString ());
+        print (name + " Encountered: " + obstacle.Type);
+        Animator.SetTrigger (obstacle.Type.ToString ());
+        RuntimeManager.PlayOneShot ("event:/" + Type.ToString () + "/" + obstacle.Type.ToString () + obstacle.Version);
     }
 
     public void OnUpdateSegment(Transform nextLocation, bool teleport = false)

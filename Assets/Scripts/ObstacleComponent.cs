@@ -6,4 +6,5 @@ public class ObstacleComponent : MonoBehaviour
 {
     public ObstacleType Type;
     public int ObstacleLength = 1;
+    public string Version = "";
 }
