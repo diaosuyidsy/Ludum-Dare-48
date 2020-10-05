@@ -34,17 +34,17 @@ PrefabInstance:
     - target: {fileID: 7628394060784177660, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle_ 4-hurdle1
+      value: Obstacle_ 4-hurdle1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.697
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.67
       objectReference: {fileID: 0}
     - target: {fileID: 7628394060784177661, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
@@ -94,12 +94,22 @@ PrefabInstance:
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.09
+      value: -0.5733
       objectReference: {fileID: 0}
     - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.15
+      value: 0.3802
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.825304
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628394061536743376, guid: a3d9a29e12b7f8c46886514678182b02,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.71086013
       objectReference: {fileID: 0}
     - target: {fileID: 7628394061536743377, guid: a3d9a29e12b7f8c46886514678182b02,
         type: 3}
