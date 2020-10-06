@@ -41,7 +41,7 @@ public class MoveableLocationsComponent : MonoBehaviour
         // Check to see if currentoccupants[i] can be occupied
         // Check Previous Obstacle
         int previousObs = GetNearestPreviousOccupants (index);
-        if (previousObs == -1 ||
+        if (previousObs != -1 &&
             CurrentOccupants[previousObs].GetComponent<ObstacleComponent> ().ObstacleLength > Mathf.Abs (index - previousObs))
             return false;
         // Then Check Behind Obstacle
@@ -84,7 +84,8 @@ public class MoveableLocationsComponent : MonoBehaviour
                 }
             }
         }
-        if (minIndex == -1) return;
+        Debug.Assert (minIndex != -1, "Min Index is -1");
+//        if (minIndex == -1) return;
         CurrentOccupants[minIndex] = target.gameObject;
         target.position = LocationTransforms[minIndex].position;
     }
