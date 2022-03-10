@@ -3818,6 +3818,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1761915493}
     m_Modifications:
+    - target: {fileID: 1688055644741001608, guid: 4e4bbff32ce704240b2073019a2a2032,
+        type: 3}
+      propertyPath: Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1688055644741001609, guid: 4e4bbff32ce704240b2073019a2a2032,
         type: 3}
       propertyPath: MoveableLocations

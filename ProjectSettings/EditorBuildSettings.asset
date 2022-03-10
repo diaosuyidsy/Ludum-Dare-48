@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LoopTest.unity
+    guid: 8204c621f508aef46ae312a2f91bd7d1
   m_configObjects: {}

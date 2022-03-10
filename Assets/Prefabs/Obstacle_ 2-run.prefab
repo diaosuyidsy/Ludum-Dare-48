@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1869494556, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: Type
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1869494556, guid: a3d9a29e12b7f8c46886514678182b02, type: 3}
       propertyPath: ObstacleLength

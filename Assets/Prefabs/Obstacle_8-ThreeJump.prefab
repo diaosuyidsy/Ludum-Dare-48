@@ -74,6 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 8
   ObstacleLength: 8
+  Version: 
 --- !u!114 &1869494557
 MonoBehaviour:
   m_ObjectHideFlags: 0

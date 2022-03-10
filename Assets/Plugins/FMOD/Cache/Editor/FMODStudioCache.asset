@@ -13,7 +13,30 @@ MonoBehaviour:
   m_Name: event:/Dog/hurdle
   m_EditorClassIdentifier: 
   Path: event:/Dog/hurdle
-  guid: a5be691b63a15c4fa74705c8d8c07908
+  guid: 086a111ffb1c044f96c6381e2869cc85
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8545774458059475191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hamster/fly2
+  m_EditorClassIdentifier: 
+  Path: event:/Hamster/fly2
+  guid: e46a8c20b28b2a42bf50ba7733507c92
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -59,7 +82,53 @@ MonoBehaviour:
   m_Name: event:/Hamster/fly
   m_EditorClassIdentifier: 
   Path: event:/Hamster/fly
-  guid: d05eefa7bacd0046bfd5f41f75031fe9
+  guid: 58c436f869835a41bb61cf459b501189
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8245239352981811020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dog/roll2
+  m_EditorClassIdentifier: 
+  Path: event:/Dog/roll2
+  guid: 66c5dfb9ae12994ba7ebe3cdd862a5de
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-7525393009022878355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dog/hurdle2
+  m_EditorClassIdentifier: 
+  Path: event:/Dog/hurdle2
+  guid: e6c424a1d3ca4c4aae7ad5ba31180c7c
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -82,7 +151,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/longJump
   m_EditorClassIdentifier: 
   Path: event:/Turtle/longJump
-  guid: f4d653417804f94f9f653c7042fe283d
+  guid: 754f051bae58804990d5974732718a12
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -105,7 +174,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/highJump
   m_EditorClassIdentifier: 
   Path: event:/Turtle/highJump
-  guid: bd80bf31227477408a8aecfb8492c536
+  guid: a83baa2941776b44a91a6e04fb37636b
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -128,7 +197,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/climb
   m_EditorClassIdentifier: 
   Path: event:/Turtle/climb
-  guid: 7670d737bcfcd947b37dc3cd3b63c3dc
+  guid: cb6492f8115bf34899ee4416adf596da
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -174,7 +243,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/roll
   m_EditorClassIdentifier: 
   Path: event:/Turtle/roll
-  guid: 9971a3501d26c848bddac25e0cf694b6
+  guid: 8924182837bce44bbc9501046bd4cd93
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -243,7 +312,7 @@ MonoBehaviour:
   m_Name: event:/Hamster/jump
   m_EditorClassIdentifier: 
   Path: event:/Hamster/jump
-  guid: 07633fa31a11e14bb4e5f53ffc9cc032
+  guid: 93b9b412df25404192a0e16f1a345c50
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -276,6 +345,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-5207228785641375947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hamster/longJump2
+  m_EditorClassIdentifier: 
+  Path: event:/Hamster/longJump2
+  guid: 2352b11dd1cc9444bcf7d539ecb7d239
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-5185239450414363012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +381,30 @@ MonoBehaviour:
   m_Name: event:/Hamster/crawl
   m_EditorClassIdentifier: 
   Path: event:/Hamster/crawl
-  guid: 17dd60f3ec45df4696b1f808c24351e9
+  guid: 810cb5b6e47c9247a4488d0876a4cdc3
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-4370655064079614040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bunny/fly2
+  m_EditorClassIdentifier: 
+  Path: event:/Bunny/fly2
+  guid: 765e152d364cfd4d94b7e4fe2f7ea239
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -315,13 +430,13 @@ MonoBehaviour:
   guid: 61889f09caf2ae4c826bfcb330f6a11e
   Banks:
   - {fileID: 250860677314934341}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 40118
 --- !u!114 &-4127244679561447421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +450,7 @@ MonoBehaviour:
   m_Name: event:/Hamster/roll
   m_EditorClassIdentifier: 
   Path: event:/Hamster/roll
-  guid: 81e07e01e83d5b4a94adc3a8c7d484d4
+  guid: 8413011f1414d94d970d9d3f24d67d2c
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -358,7 +473,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/trippleJump
   m_EditorClassIdentifier: 
   Path: event:/Turtle/trippleJump
-  guid: f7cf394527016e47ab42bbd6ec97d6d2
+  guid: b6dda6f41ac72b42aabc7aaa86476863
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -381,7 +496,7 @@ MonoBehaviour:
   m_Name: event:/Dog/longJump
   m_EditorClassIdentifier: 
   Path: event:/Dog/longJump
-  guid: 3d0b2f0e8ca8964db2c8b845275a7346
+  guid: a3c9f0b844449947b1a2d5bb82650ec1
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -404,7 +519,7 @@ MonoBehaviour:
   m_Name: event:/Dog/fly
   m_EditorClassIdentifier: 
   Path: event:/Dog/fly
-  guid: c1d9fd3349890e44b815169654beb96e
+  guid: 193ed931315a35438675564db5e62754
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -450,7 +565,7 @@ MonoBehaviour:
   m_Name: event:/Dog/climb
   m_EditorClassIdentifier: 
   Path: event:/Dog/climb
-  guid: eb1c51db2e9db445bbc9a54391a3fae2
+  guid: 4d15fcb3049b0c4d8ae78115571a99cf
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -496,7 +611,30 @@ MonoBehaviour:
   m_Name: event:/Turtle/crawl
   m_EditorClassIdentifier: 
   Path: event:/Turtle/crawl
-  guid: 3ce10ca4bf88cd4383c02c47e79404b9
+  guid: 543d019894e9564d92bcd460f70d6745
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-2203904205492883089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hamster/roll2
+  m_EditorClassIdentifier: 
+  Path: event:/Hamster/roll2
+  guid: 8e25a0f8e8143a43b66cd6e7a52a579d
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -519,7 +657,7 @@ MonoBehaviour:
   m_Name: event:/Dog/jump
   m_EditorClassIdentifier: 
   Path: event:/Dog/jump
-  guid: 2485297d726dbb4ab0bd8632ed199832
+  guid: 50633a87cf277d4bafe2d26fa06b6dcf
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -543,11 +681,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/ludumdare48/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637375057407488430
+  lastModified: 637375113428912724
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2744
+    Value: 3268
   Exists: 1
 --- !u!114 &-1928387183907416216
 MonoBehaviour:
@@ -562,7 +700,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/run
   m_EditorClassIdentifier: 
   Path: event:/Turtle/run
-  guid: 607f9b24ff11f04eab1eb2ba25ece6c6
+  guid: 9cb8d7b36f552747af9eccca598faf3f
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -585,7 +723,7 @@ MonoBehaviour:
   m_Name: event:/Hamster/hurdle
   m_EditorClassIdentifier: 
   Path: event:/Hamster/hurdle
-  guid: e89706ab5abfc640bffa0e7d9e639a9e
+  guid: 5e8572e14928814b8c3626d36944a06a
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -609,6 +747,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Bunny/jump
   guid: abc72e5bfd563640a928114dd489d7c4
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1248185993016617146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Turtle/longJump2
+  m_EditorClassIdentifier: 
+  Path: event:/Turtle/longJump2
+  guid: fbd970920d900140840149791094f278
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -679,6 +840,52 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-297860320333462428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bunny/roll2
+  m_EditorClassIdentifier: 
+  Path: event:/Bunny/roll2
+  guid: 541ca3a97f006745832ed348f484bf98
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-81771533444248536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bunny/hurdle2
+  m_EditorClassIdentifier: 
+  Path: event:/Bunny/hurdle2
+  guid: 56447d1f73528f43a4f793dbf8a10b28
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,7 +908,6 @@ MonoBehaviour:
   - {fileID: 5092723542929692898}
   - {fileID: 5105122025597783009}
   - {fileID: -5185239450414363012}
-  - {fileID: 1148998058931666299}
   - {fileID: -2077625522588269050}
   - {fileID: -6190549913972192909}
   - {fileID: -8466252772329065053}
@@ -734,22 +940,35 @@ MonoBehaviour:
   - {fileID: -3569897189102795969}
   - {fileID: -8252046225960674008}
   - {fileID: 4350128844614219176}
-  - {fileID: -5789378252865131576}
   - {fileID: 7630034576921352980}
   - {fileID: -1807218426500214568}
   - {fileID: -3229940647796836328}
-  - {fileID: 1154334579284956415}
-  - {fileID: -5540335031354803605}
   - {fileID: -7440206008877168120}
   - {fileID: 241233079344466605}
   - {fileID: -3825360129243761578}
   - {fileID: 7694260738916268956}
+  - {fileID: 6874017245284536390}
+  - {fileID: 1065539769397753864}
+  - {fileID: -5207228785641375947}
+  - {fileID: -297860320333462428}
+  - {fileID: -81771533444248536}
+  - {fileID: 352137395945014182}
+  - {fileID: -8245239352981811020}
+  - {fileID: -4370655064079614040}
+  - {fileID: 4032575167275315825}
+  - {fileID: -2203904205492883089}
+  - {fileID: 7470484141735628052}
+  - {fileID: 8764558592449539077}
+  - {fileID: -8545774458059475191}
+  - {fileID: -7525393009022878355}
+  - {fileID: -1248185993016617146}
+  - {fileID: 2284181392415454769}
   EditorParameters: []
   MasterBanks:
   - {fileID: 250860677314934341}
   StringsBanks:
   - {fileID: -2002580845953970951}
-  stringsBankWriteTime: 637375057407488430
+  stringsBankWriteTime: 637375113428912724
   cacheVersion: 5
 --- !u!114 &241233079344466605
 MonoBehaviour:
@@ -764,7 +983,7 @@ MonoBehaviour:
   m_Name: event:/Hamster/longJump
   m_EditorClassIdentifier: 
   Path: event:/Hamster/longJump
-  guid: f50d3624272c7d4b80271672d7eedab8
+  guid: 046cd7d97b20e64eb3c9d8f5ef087292
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -788,10 +1007,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/ludumdare48/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637375057407418613
+  lastModified: 637375113428902906
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &352137395945014182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Turtle/roll2
+  m_EditorClassIdentifier: 
+  Path: event:/Turtle/roll2
+  guid: 5a547df975bf504a8c14da858a229b40
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &1065539769397753864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hamster/hurdle2
+  m_EditorClassIdentifier: 
+  Path: event:/Hamster/hurdle2
+  guid: 22745f78ea9a4146aef2b008612b431e
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &1148998058931666299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,7 +1116,7 @@ MonoBehaviour:
   m_Name: event:/Hamster/highJump
   m_EditorClassIdentifier: 
   Path: event:/Hamster/highJump
-  guid: 8aa1ec872ab1c94c99268ca1cd0346cd
+  guid: b553dec52c76f8439a2b257582a58117
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -884,6 +1149,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &2284181392415454769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dog/fly2
+  m_EditorClassIdentifier: 
+  Path: event:/Dog/fly2
+  guid: feae2bc2aae21440891fe7fbfa1b4a21
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &2726857458507395635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,7 +1185,30 @@ MonoBehaviour:
   m_Name: event:/Hamster/run
   m_EditorClassIdentifier: 
   Path: event:/Hamster/run
-  guid: ba253d1c80a2df48bd511f4a93bbf402
+  guid: 168860a359019e4991b89535673e3bae
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4032575167275315825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Turtle/fly2
+  m_EditorClassIdentifier: 
+  Path: event:/Turtle/fly2
+  guid: 7a5fcae5d0b8f146a1ed89cd3af2ab5d
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -920,7 +1231,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/jump
   m_EditorClassIdentifier: 
   Path: event:/Turtle/jump
-  guid: 8d5e1897f3104e41bbc806c983bdf8be
+  guid: 34160d1683462e4fa25716d716adf579
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -943,7 +1254,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/fly
   m_EditorClassIdentifier: 
   Path: event:/Turtle/fly
-  guid: 4ff632205794f943902c98d0c60c93fb
+  guid: c676025582b2f847b2e6759e2df60556
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -989,7 +1300,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/slide
   m_EditorClassIdentifier: 
   Path: event:/Turtle/slide
-  guid: 0dd386e1d850254483df935a1d661a5e
+  guid: ed65c96c2dff804895575598c3b7d888
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1035,7 +1346,7 @@ MonoBehaviour:
   m_Name: event:/Turtle/hurdle
   m_EditorClassIdentifier: 
   Path: event:/Turtle/hurdle
-  guid: 540956c7f5dc8643986ff9347228d8ae
+  guid: 132a774d65f52a448a8ac6a4304330c8
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1058,7 +1369,7 @@ MonoBehaviour:
   m_Name: event:/Dog/trippleJump
   m_EditorClassIdentifier: 
   Path: event:/Dog/trippleJump
-  guid: 044951c735d33342a6a9953aa4e2511e
+  guid: 82388cb4b1fda242b03af61874fcf91f
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1081,7 +1392,7 @@ MonoBehaviour:
   m_Name: event:/Dog/highJump
   m_EditorClassIdentifier: 
   Path: event:/Dog/highJump
-  guid: a31b39e13ebf504886d037a487508e95
+  guid: 46568b783bb6c3448dac62abb17bbf2d
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1104,7 +1415,7 @@ MonoBehaviour:
   m_Name: event:/Hamster/trippleJump
   m_EditorClassIdentifier: 
   Path: event:/Hamster/trippleJump
-  guid: 9588eabdd897bb4d9a46f79def7ede45
+  guid: 7480f55a19e19e43923d6cb96bbcdf1e
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1127,7 +1438,7 @@ MonoBehaviour:
   m_Name: event:/Dog/roll
   m_EditorClassIdentifier: 
   Path: event:/Dog/roll
-  guid: 5cbed5f2eb1bc84c96f0a79db0516e0d
+  guid: f63b8874c3d49a47b6c173d22690f4cf
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1150,7 +1461,53 @@ MonoBehaviour:
   m_Name: event:/Dog/crawl
   m_EditorClassIdentifier: 
   Path: event:/Dog/crawl
-  guid: 6f87976fad7e614fa26d69a88554ceac
+  guid: 5d60aebf9e4b884d8fc1aade2fdd9709
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &6874017245284536390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dog/longJump2
+  m_EditorClassIdentifier: 
+  Path: event:/Dog/longJump2
+  guid: 14ee9eb8646b524ca3fad470b451490f
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7470484141735628052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bunny/longJump2
+  m_EditorClassIdentifier: 
+  Path: event:/Bunny/longJump2
+  guid: 961bf3ad2f93cd4f8a3adba3bfd795b5
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1173,7 +1530,7 @@ MonoBehaviour:
   m_Name: event:/Dog/slide
   m_EditorClassIdentifier: 
   Path: event:/Dog/slide
-  guid: a66861e3f40b4a4bb247581d2b7d87fa
+  guid: 223ca820c24bdd4cb76f7b40aa651b01
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1196,7 +1553,7 @@ MonoBehaviour:
   m_Name: event:/Hamster/climb
   m_EditorClassIdentifier: 
   Path: event:/Hamster/climb
-  guid: 4b995255157f6c4ba10d4b18085d58b9
+  guid: e013e62df63f2144856300fd5b2b6e16
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1219,7 +1576,7 @@ MonoBehaviour:
   m_Name: event:/Hamster/slide
   m_EditorClassIdentifier: 
   Path: event:/Hamster/slide
-  guid: e562eaebab47ed4e8c2e1747e20d7e83
+  guid: 0df0d265ea5bd047b4510da61dea490d
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1242,7 +1599,7 @@ MonoBehaviour:
   m_Name: event:/Dog/run
   m_EditorClassIdentifier: 
   Path: event:/Dog/run
-  guid: f814efa8106f064590deb1fe7f55137a
+  guid: f531ec6e5dd52041ba201c3233705cb7
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
@@ -1266,6 +1623,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Bunny/slide
   guid: ad405bde9de9ef428751ed511ebb8daa
+  Banks:
+  - {fileID: 250860677314934341}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8764558592449539077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Turtle/hurdle2
+  m_EditorClassIdentifier: 
+  Path: event:/Turtle/hurdle2
+  guid: a86d7519ff720d41a1330aca4d38c477
   Banks:
   - {fileID: 250860677314934341}
   IsStream: 0
